@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Obituary</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <h1>Submit an Obituary</h1>
+    <form action="submit_obituary.py" method="post" id="obituary_form">
+        <div class="form-group">
+            <label for="name">Name of Deceased:</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="date_of_birth">Date of Birth:</label>
+            <input type="date" name="date_of_birth" id="date_of_birth" required>
+        </div>
+        <div class="form-group">
+            <label for="date_of_death">Date of Death:</label>
+            <input type="date" name="date_of_death" id="date_of_death" required>
+        </div>
+        <div class="form-group">
+            <label for="content">Obituary Content:</label>
+            <textarea name="content" id="content" rows="10" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="author">Author (Optional):</label>
+            <input type="text" name="author" id="author">
+        </div>
+        <button type="submit">Submit Obituary</button>
+    </form>
+    <script src="script.js"></script>  </body>
+</html>
